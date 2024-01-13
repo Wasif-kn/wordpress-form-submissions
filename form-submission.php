@@ -6,7 +6,7 @@ Author: Wasif Khan
 
 /**
  * Plugin Name: Form Submission
- * Plugin URI: https://github.com/Wasif-kn/WP-Fire-Crackers
+ * Plugin URI: https://github.com/Wasif-kn/wordpress-form-submissions
  * Description: Submits Form and Shows Submitted Data
  * Version: 1.0.0
  * Author: Wasif Khan
@@ -147,7 +147,7 @@ function render_form_submission_page()
             <p><label>User Private?</label>
                 <select name="user_private" id="user_private" required>
                     <option value="Yes">Yes</option>
-                    <option value="No" selected="selected">No</option>
+                    <option value="No" selected="selected">No</option> 
                 </select>
             </p>
 
@@ -291,6 +291,7 @@ function submit_form_data()
     $user_date = isset($_POST['user_date']) ? sanitize_text_field($_POST['user_date']) : '';
     $user_hidden = isset($_POST['user_hidden']) ? sanitize_text_field($_POST['user_hidden']) : '';
 
+    
     $table_name = $wpdb->prefix . 'form_submission_data';
 
     // Prepare data to be inserted into the table

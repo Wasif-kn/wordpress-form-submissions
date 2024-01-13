@@ -32,7 +32,8 @@ jQuery(document).ready(function ($) {
                 user_date: user_date,
                 user_private: user_private,
                 user_hidden: user_hidden
-
+ 
+                
             },
             success: function (response) {
                 // Handle success, if needed
