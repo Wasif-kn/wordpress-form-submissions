@@ -1,7 +1,7 @@
 <?php
 /*
 Version: 1.0
-Author: Wasif Khan
+Author: PixelLabs Technologies
 */
 
 /**
@@ -9,8 +9,8 @@ Author: Wasif Khan
  * Plugin URI: https://github.com/Wasif-kn/wordpress-form-submissions
  * Description: Submits Form and Shows Submitted Data
  * Version: 1.0.0
- * Author: Wasif Khan
- * Author URI: https://github.com/Wasif-kn
+ * Author: PixelLabs Technologies
+ * Author URI: https://www.linkedin.com/company/pixelabs-tech/
  * License: GPL-2.0+
  * Text Domain: form_submission
  * Domain Path: /languages
@@ -412,7 +412,7 @@ function form_submission_data_shortcode()
     </head>
 
     <!-- Display the list of data in a table -->
-    <div class="wrap" style="width:100%; margin: auto; margin-top: 30px;">
+    <div class="wrap scrollable-datatable-container" style="width:100%; margin: auto; margin-top: 30px;">
         <table id="form_data">
             <thead>
                 <th>Full Name</th>
@@ -480,6 +480,7 @@ function form_submission_data_shortcode()
     <script>
         new DataTable('#form_data', {
             responsive: true,
+
         });
     </script>
 

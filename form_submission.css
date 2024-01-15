@@ -103,3 +103,18 @@
     border-bottom: 0 !important;
 
   }
+
+
+  @media only screen and (max-width: 768px) { 
+
+    /* Enable scrolling for table on mobile */
+    .dataTables_wrapper {
+        overflow-x: auto;
+        overflow-y: scroll;
+    }
+
+    /* Adjust scroll bar width if needed */
+    .dataTables_scrollBody {
+        scrollbar-width: thin;
+    }
+}
